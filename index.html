@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PawCare – AI health insights for your pet</title>
+<meta name="description" content="Scan your pet's photo, run a weekly health check and chat with AI about their care. PawCare keeps your pet's health in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b3a33;--teal:#0f9d89;--mint:#d9eeea;--coral:#f26b4f;--bg:#f5f8f5;--muted:#4f6b66;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{font-weight:800;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 6px var(--mint)}
+header nav a{margin-left:22px;text-decoration:none;font-weight:500;color:var(--muted)}
+header nav a:hover{color:var(--ink)}
+.hero{padding:48px 0 24px;max-width:720px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.04;font-weight:800;margin:0 0 20px;letter-spacing:-.02em}
+.hero p{font-size:20px;color:var(--muted);margin:0 0 28px;max-width:560px}
+.badge{display:inline-block;background:var(--ink);color:#fff;padding:14px 24px;border-radius:14px;font-weight:700}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:56px 0 24px;align-items:start}
+.shots img{width:100%;height:auto;display:block;border-radius:22px;box-shadow:0 18px 40px -18px rgba(11,58,51,.45)}
+.shots img:nth-child(even){margin-top:36px}
+section{padding:64px 0 0}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 12px;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 32px;max-width:560px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:36px}
+.features h3{margin:0 0 6px;font-size:20px;border-top:3px solid var(--teal);padding-top:14px}
+.features p{margin:0;color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.plan{border-radius:24px;padding:28px;background:#fff;border:1px solid #dbe6e2}
+.plan.pro{background:var(--teal);color:#fff;border-color:var(--teal)}
+.plan h3{margin:0;font-size:22px}
+.price{font-size:15px;margin:4px 0 16px;opacity:.85}
+.plan ul{list-style:none;margin:0;padding:0}
+.plan li{padding:9px 0;border-top:1px solid rgba(11,58,51,.12)}
+.pro li{border-color:rgba(255,255,255,.25)}
+.note{margin-top:56px;padding:20px 24px;background:var(--mint);border-radius:18px;font-size:15px;color:var(--ink)}
+footer{margin-top:56px;padding:28px 0 44px;border-top:1px solid #dbe6e2;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:15px;color:var(--muted)}
+footer a{text-decoration:none;margin-right:20px}
+footer a:hover{color:var(--ink);text-decoration:underline}
+@media(max-width:720px){.shots{grid-template-columns:repeat(2,1fr)}.shots img:nth-child(even){margin-top:0}header nav a{margin-left:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="./"><span class="dot"></span>PawCare</a>
+  <nav><a href="#features">Features</a><a href="#plans">Plans</a><a href="Support.html">Support</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <h1>Your pet's health. All in one place.</h1>
+  <p>Scan a photo, run a quick weekly check and ask questions any time. PawCare turns small signs into clear next steps for your dog or cat.</p>
+  <span class="badge">Coming soon to the App Store</span>
+</div>
+
+<div class="shots">
+  <img src="images/home.jpg" alt="PawCare home screen with a pet health score" width="540" height="1170">
+  <img src="images/scan.jpg" alt="AI Health Scan analyzing a photo of a dog" width="540" height="1170" loading="lazy">
+  <img src="images/reports.jpg" alt="Health reports saved from every scan and weekly check" width="540" height="1170" loading="lazy">
+  <img src="images/score.jpg" alt="Weekly health check-in and daily health tasks" width="540" height="1170" loading="lazy">
+</div>
+
+<section id="features">
+  <h2>Know what's normal. Spot what's not.</h2>
+  <p class="lead">Three tools that help you notice changes early and decide when to call the vet.</p>
+  <div class="features">
+    <div><h3>AI Health Scan</h3><p>Take a photo and get a quick look at eyes, nose, ears, skin and coat, with anything worth watching flagged.</p></div>
+    <div><h3>Weekly health check</h3><p>Answer 10 short questions and get a health score with simple tips. Every report is saved in your pet's profile.</p></div>
+    <div><h3>AI chat</h3><p>Ask about food, behavior or symptoms and get a clear answer, plus a nudge to see your vet when it matters.</p></div>
+  </div>
+</section>
+
+<section id="plans">
+  <h2>Start free. Upgrade when you need more.</h2>
+  <p class="lead">Try every feature for free, then go Pro for higher limits.</p>
+  <div class="plans">
+    <div class="plan">
+      <h3>Free</h3><div class="price">$0</div>
+      <ul><li>1 pet</li><li>3 AI chat messages</li><li>2 photo scans</li><li>1 weekly health check</li></ul>
+    </div>
+    <div class="plan pro">
+      <h3>PawCare Pro</h3><div class="price">$7.99 per month or $79 per year</div>
+      <ul><li>2 pets</li><li>Unlimited AI chat</li><li>Unlimited photo scans</li><li>Unlimited weekly health checks</li></ul>
+    </div>
+  </div>
+  <p class="note">PawCare gives general wellness information and is not a substitute for professional veterinary care. If your pet seems unwell, contact your vet. Subscriptions renew automatically unless canceled in your Apple ID settings at least 24 hours before the period ends.</p>
+</section>
+</main>
+
+<footer>
+  <div><a href="Support.html">Support</a><a href="Privacy-Policy.html">Privacy Policy</a><a href="mailto:support@takecarepet.com">support@takecarepet.com</a></div>
+  <div>© 2026 PawCare</div>
+</footer>
+</div>
+</body>
+</html>
